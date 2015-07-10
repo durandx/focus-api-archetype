@@ -1,0 +1,26 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version =	'1.0' encoding = 'ISO-8859-1'?>
+<config>
+
+	<module name="${artifactIdUpper}-DAO" api="false" inheritance="io.vertigo.dynamo.impl.store.util.DAOBroker">
+	</module>
+
+	<module name="${artifactIdUpper}-PAO" api="false" inheritance="java.lang.Object">
+	</module>
+	
+	<module name="${artifactIdUpper}-SEARCH-HANDLER" api="false" inheritance="io.vertigo.dynamo.search.metamodel.SearchLoader">
+	</module>
+
+	<module name="${artifactIdUpper}-ASPECT" inheritance="java.lang.Object" >
+		<aspect class="io.vertigo.dynamo.impl.transaction.VTransactionAspect"/>
+	</module>
+		
+	<module name="${artifactIdUpper}-SERVICES">
+		<component api="CommonServices" class="${package}.services.common.CommonServicesImpl" />
+		<component api="MasterdataServices" class="${package}.services.masterdata.MasterdataServicesImpl" />
+	</module>
+	
+	
+</config>

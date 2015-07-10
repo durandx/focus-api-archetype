@@ -1,0 +1,13 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version =	'1.0' encoding = 'ISO-8859-1'?>
+<config>
+	<module name="knock-ws" inheritance="io.vertigo.vega.rest.RestfulService" api="false">
+		<component class="io.vertigo.vega.impl.rest.catalog.CatalogRestServices" />
+		<component class="io.vertigo.vega.impl.rest.catalog.SwaggerRestServices" />
+
+		<component class="${package}.webservices.common.CommonWebServices" />
+		<component class="${package}.webservices.masterdata.MasterdataWebServices" />
+	</module>
+</config>
