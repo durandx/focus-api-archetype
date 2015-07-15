@@ -1,6 +1,6 @@
 # focus-api-archetype
 
-Archetype/StarterKit vertigo.io pour FocusJS
+Archetype/StarterKit vertigo.io for FocusJS
 
 Archetype installation in your local repository
 ```
