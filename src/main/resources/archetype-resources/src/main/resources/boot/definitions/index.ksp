@@ -1,2 +1,2 @@
-package roldolphe.demo.domain.search
+package ${package}.domain.search
 
