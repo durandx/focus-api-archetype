@@ -6,9 +6,8 @@ package ${package}.services.masterdata;
 import java.util.ArrayList;
 import java.util.List;
 
-import $
-import rodolphe.demo.domain.masterdata.CodeScope;
-import rodolphe.demo.util.ReferenceObject;{package}.util.ReferenceObject;
+import ${package}.domain.masterdata.CodeScope;
+import ${package}.util.ReferenceObject;
 
 /**
  * Implementations of masterdata services.
