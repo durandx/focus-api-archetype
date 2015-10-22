@@ -5,7 +5,7 @@
 <config>
 	
 
-	<module name="STITCH-test-env">
+	<module name="${artifactId}-test-env">
 		<component api="SqlDataBaseManager" class="io.vertigo.dynamo.impl.database.SqlDataBaseManagerImpl">
 			<plugin class="io.vertigo.dynamo.plugins.database.connection.mock.MockConnectionProviderPlugin">
 				<param name="dataBaseClass" value="{boot.db.type}" />
